@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Read the employees file into a DataFrame
+employees = pd.read_csv('employees.csv')
+
+# Select distinct department ids
+distinct_department_ids = employees['department_id'].unique()
+
+# Print the distinct department ids
+print(distinct_department_ids)
