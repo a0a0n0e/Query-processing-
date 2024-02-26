@@ -1,0 +1,2 @@
+pivot_table_unit_sold = sales_data.pivot_table(index='Item', values='Units', aggfunc='sum')
+print(pivot_table_unit_sold)
