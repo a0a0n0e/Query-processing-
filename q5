@@ -1,0 +1,11 @@
+# Assuming you have a DataFrame called 'alphabet_stock_data' with columns 'Date' and 'Volume'
+
+# Filter the data between two specific dates
+filtered_data = alphabet_stock_data[(alphabet_stock_data['Date'] >= start_date) & (alphabet_stock_data['Date'] <= end_date)]
+
+# Plot the bar plot
+plt.bar(filtered_data['Date'], filtered_data['Volume'])
+plt.xlabel('Date')
+plt.ylabel('Volume')
+plt.title('Trading Volume of Alphabet Inc. Stock between {} and {}'.format(start_date, end_date))
+plt.show()
