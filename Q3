@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Read the jobs file into a DataFrame
+jobs = pd.read_csv('jobs.csv')
+
+# Sort the DataFrame by job title in descending order
+sorted_jobs = jobs.sort_values(by='JOB_TITLE', ascending=False)
+
+# Print the sorted job details
+print(sorted_jobs)
