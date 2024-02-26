@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+
+
+np.random.seed(0)
+data = np.random.randn(10, 4)
+df = pd.DataFrame(data)
+
+
+def highlight_negative_red(val):
+    color = 'red' if val < 0 else 'black'
+    return 'color: {}'.format(color)
+
+styled_df = df.style.applymap(highlight_negative_red)
+styled_df
