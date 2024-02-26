@@ -1,9 +1,7 @@
-# Assuming you have a DataFrame called 'alphabet_stock_data' with columns 'Date', 'Price', and 'Volume'
 
-# Filter the data between two specific dates
 filtered_data = alphabet_stock_data[(alphabet_stock_data['Date'] >= start_date) & (alphabet_stock_data['Date'] <= end_date)]
 
-# Plot the scatter plot
+
 plt.scatter(filtered_data['Price'], filtered_data['Volume'])
 plt.xlabel('Price')
 plt.ylabel('Volume')
