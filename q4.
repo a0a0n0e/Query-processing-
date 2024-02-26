@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming you have a DataFrame called 'alphabet_stock_data' with columns 'Date' and 'Price'
+# Replace 'start_date' and 'end_date' with your desired dates
+
+# Filter the data between two specific dates
+filtered_data = alphabet_stock_data[(alphabet_stock_data['Date'] >= start_date) & (alphabet_stock_data['Date'] <= end_date)]
+
+# Plot the line plot
+plt.plot(filtered_data['Date'], filtered_data['Price'])
+plt.xlabel('Date')
+plt.ylabel('Price')
+plt.title('Historical Stock Prices of Alphabet Inc. between {} and {}'.format(start_date, end_date))
+plt.show()
