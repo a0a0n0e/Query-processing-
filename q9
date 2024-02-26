@@ -1,0 +1,2 @@
+pivot_table_total_sale = sales_data.pivot_table(index=['Region', 'Manager', 'SalesMan'], values='Sale_amt', aggfunc='sum')
+print(pivot_table_total_sale)
