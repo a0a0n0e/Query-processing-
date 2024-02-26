@@ -1,0 +1,11 @@
+import pandas as pd
+import numpy as np
+
+np.random.seed(0)
+data = np.random.randn(10, 4)
+data[np.random.choice(range(10), size=5), np.random.choice(range(4), size=5)] = np.nan
+df = pd.DataFrame(data)
+
+placeholder = -999
+df_filled = df.fillna(placeholder)
+print(df_filled)
