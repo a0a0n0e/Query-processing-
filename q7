@@ -1,0 +1,4 @@
+
+
+pivot_table_max_min = sales_data.pivot_table(index='Item', values='Sale_amt', aggfunc={'Sale_amt': ['max', 'min']})
+print(pivot_table_max_min)
