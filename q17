@@ -1,0 +1,5 @@
+
+result = df.groupby('school_code')['age'].agg(['mean', 'min', 'max'])
+
+print("Mean, min, and max value of age for each school:")
+print(result)
